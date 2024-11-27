@@ -14,6 +14,11 @@
 			"behaviorId": "Pin",
 			"name": "Pegado",
 			"sid": 507169396752836
+		},
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 580146280242030
 		}
 	],
 	"effectTypes": [],
@@ -22,15 +27,15 @@
 			{
 				"frames": [
 					{
-						"width": 753,
-						"height": 808,
-						"originX": 0.5,
-						"originY": 0.5,
+						"width": 601,
+						"height": 756,
+						"originX": 0.5166389351081531,
+						"originY": 0.5013227513227513,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 8340780,
+						"imageSpriteId": 3384789,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""

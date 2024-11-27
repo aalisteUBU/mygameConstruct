@@ -1,5 +1,5 @@
 {
-	"projectFormatVersion": 2,
+	"projectFormatVersion": 1,
 	"savedWithRelease": 41600,
 	"name": "montarpcio",
 	"runtime": "c3",
@@ -64,6 +64,13 @@
 		},
 		{
 			"type": "behavior",
+			"id": "Fade",
+			"name": "Desvanecer",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "behavior",
 			"id": "Pin",
 			"name": "Pegado",
 			"author": "Scirra",
@@ -90,7 +97,7 @@
 			"cpu_cooler",
 			"Placa_base",
 			"ATX_Case",
-			"Texto",
+			"Texto_Titulos",
 			"Texto2",
 			"TXT_COOLER",
 			"TXT_PLACA",
@@ -102,22 +109,18 @@
 			"Navegador",
 			"txt_close",
 			"Sprite3",
-			"texto01",
-			"txt_aciertos",
+			"Texto3",
+			"text_aciertos",
 			"Teclado",
 			"Plan",
 			"Plan2",
 			"Plan3",
 			"Plan4",
 			"Plan5",
-			"death_collider",
-			"EntradaDeTexto",
-			"texto02",
-			"txt_vida",
-			"GO_SOMBRA",
-			"Sprite4",
-			"Sprite5",
-			"Plan6"
+			"death_limit",
+			"fondo_fake",
+			"Plan6",
+			"Preview"
 		],
 		"subfolders": []
 	},
