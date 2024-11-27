@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "VAR_VIDA",
+			"type": "number",
+			"initialValue": "2",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 403074263429894
+		},
+		{
+			"eventType": "variable",
 			"name": "VAR_ACIERTOS",
 			"type": "number",
 			"initialValue": "0",
@@ -198,10 +208,10 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "Placa_base",
-					"sid": 300275201671059,
+					"objectClass": "Sprite3",
+					"sid": 369479633735908,
 					"parameters": {
-						"object": "Sprite"
+						"object": "Placa_base"
 					}
 				}
 			],
@@ -228,10 +238,10 @@
 			"conditions": [
 				{
 					"id": "is-overlapping-another-object",
-					"objectClass": "cpu_cooler",
-					"sid": 417744098497699,
+					"objectClass": "Sprite3",
+					"sid": 587538854976779,
 					"parameters": {
-						"object": "Sprite2"
+						"object": "cpu_cooler"
 					}
 				}
 			],
@@ -248,6 +258,14 @@
 						"width-type": "no",
 						"height-type": "no",
 						"z": false
+					}
+				},
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 657609718936283,
+					"parameters": {
+						"layout": "Escena_intro"
 					}
 				}
 			],
@@ -275,6 +293,62 @@
 					"parameters": {
 						"visibility": "visible"
 					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TXT_PLACA",
+					"sid": 838970787053458,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "TXT_COOLER",
+					"sid": 667612629477871,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Texto_Titulos",
+					"sid": 190921153530643,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Placa_base",
+					"sid": 875799202955390,
+					"parameters": {
+						"x": "1369",
+						"y": "319"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "cpu_cooler",
+					"sid": 568102957608240,
+					"parameters": {
+						"x": "1803",
+						"y": "105"
+					}
+				},
+				{
+					"id": "start-fade",
+					"objectClass": "fondo_fake",
+					"sid": 376312235984252,
+					"behaviorType": "Desvanecer"
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "Plan2",
+					"sid": 191557874829419,
+					"parameters": {
+						"visibility": "visible"
+					}
 				}
 			],
 			"sid": 655786759189490
@@ -295,14 +369,39 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Sprite3",
-					"sid": 857285451643568,
+					"sid": 510261902143017,
 					"parameters": {
-						"animation": "\"ANI_RUN\"",
+						"animation": "\"ANI_RUN_R\"",
 						"from": "beginning"
 					}
 				}
 			],
 			"sid": 301558918134332
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Teclado",
+					"sid": 104443994713472,
+					"parameters": {
+						"key": 37
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "Sprite3",
+					"sid": 367204225229687,
+					"parameters": {
+						"animation": "\"ANI_RUN_L\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 289144116138801
 		},
 		{
 			"eventType": "block",
@@ -320,9 +419,9 @@
 				{
 					"id": "set-animation",
 					"objectClass": "Sprite3",
-					"sid": 947860181925963,
+					"sid": 499846684368543,
 					"parameters": {
-						"animation": "\"ANI_GLASS\"",
+						"animation": "\"ANI_JUMP\"",
 						"from": "beginning"
 					}
 				}
@@ -350,6 +449,31 @@
 				}
 			],
 			"sid": 413490874217680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Sprite3",
+					"sid": 721801083127730,
+					"parameters": {
+						"object": "death_limit"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Sprite3",
+					"sid": 577643153449444,
+					"parameters": {
+						"x": "203",
+						"y": "75"
+					}
+				}
+			],
+			"sid": 586988877886500
 		}
 	],
 	"sid": 750215568216511

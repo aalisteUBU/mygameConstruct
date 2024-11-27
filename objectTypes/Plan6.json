@@ -1,0 +1,59 @@
+{
+	"name": "Plan6",
+	"plugin-id": "Sprite",
+	"sid": 841397457475091,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "solid",
+			"name": "Sólido",
+			"sid": 850217353717682
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 576,
+						"height": 324,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 5063475,
+						"collisionPoly": {
+							"points": [
+								0,
+								0.6944444444444444,
+								0.2586805555555554,
+								0.8271604938271611,
+								1,
+								0.7037037037037039,
+								1,
+								1,
+								0,
+								0.9969135802469136
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 632512423366715,
+				"name": "Default",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}
